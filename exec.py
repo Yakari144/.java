@@ -7,9 +7,10 @@ def add_line(file, string):
         f.write('\n'+string)
 
 # get the current directory
-dirname = os.getcwd()
+dirname = os.path.abspath(__file__)
 
 # string with the path to .bashrc
 bashrc = os.path.expanduser('~/.bashrc')
 
 add_line(bashrc,'python3 '+dirname+'/binding.py\n')
+
