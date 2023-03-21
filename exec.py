@@ -8,9 +8,10 @@ def add_line(file, string):
 
 # get the current directory
 dirname = os.path.abspath(__file__)
+# remove the file name from the path
+dirname = dirname[:dirname.rfind('/')]
 
 # string with the path to .bashrc
 bashrc = os.path.expanduser('~/.bashrc')
-
-add_line(bashrc,'python3 '+dirname+'/binding.py\n')
+#add_line(bashrc,'python3 '+dirname+'/binding.py\n')
 
