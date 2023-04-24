@@ -13,5 +13,5 @@ dirname = dirname[:dirname.rfind('/')]
 
 # string with the path to .bashrc
 bashrc = os.path.expanduser('~/.bashrc')
-#add_line(bashrc,'python3 '+dirname+'/binding.py\n')
+add_line(bashrc,'python3 '+dirname+'/binding.py\n')
 
